@@ -167,6 +167,15 @@
 <footer>
   © 2026 Zaytun Store
 </footer>
+  <script>
+let cartCount = 0;
 
+document.querySelectorAll('.add').forEach(button => {
+  button.addEventListener('click', () => {
+  cartCount++;
+document.querySelector('.cart').textContent = '🛒 Сабад: ' + cartCount;
+  });
+});
+</script>
 </body>
 </html>
